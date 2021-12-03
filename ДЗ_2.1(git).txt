@@ -1,0 +1,209 @@
+ 1. Создайте текстоовый файл как в первом ДЗ по Terminal: ок
+ 2. Сценарий перенесите в этот файл: ок
+ 3. На против каждого действия - напишите команду в GitBash: ок
+4. Создать внешний репозиторий c названием JSON: 
+	https://github.com/AlexShams102/JSON
+ 5. Клонировать репозиторий JSON на локальный компьютер: 
+	git clone https://github.com/AlexShams102/JSON.git
+ 6. Внутри локального JSON создать файл “new.json”:
+	touch new.json
+ 7. Добавить файл под гит: 
+	git add .
+ 8. Закоммитить файл: 
+	git commit -m "add file new.json"
+ 9. Отправить файл на внешний GitHub репозиторий: 
+	git push
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON: 
+nano new.json
+{
+"ФИО": "Шамсутдинов Алексей Раисович",
+"Возраст": 30,
+"Колличество домашних животных": 2,
+"Будущая желаемая зарплата": "500$ на стажировке"
+}
+Ctrl+X -> Y -> Enter
+ 11. Отправить изменения на внешний репозиторий: 
+	git commit -am "file editing new.json" & git push
+ 12. Создать файл preferences.json
+	  touch preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+nano preferences.json
+{
+"Люимый фильм":"Трасса 60",
+"Любимый сериал":"Клиника/Scrubs",
+"Любимая еда":"Пельмени"
+"Любимое время года":"Лето"
+"Страна которую хотели посетить":"Норвегия"
+}
+Ctrl+X -> Y -> Enter
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON 
+nano skills.json
+{
+"Hard skill 1": "Понимание процессов тестирования и разработки ПО",
+"Hard skill 2": "Понимание основ тестирования",
+"Hard skill 3": "Работа с тестовой документацией",
+"Hard skill 4": "Умение оформлять отчёты о дефектах",
+"Hard skill 5": "Знание методологий тестирования",
+"Hard skill 6": "Базы данных, веб-технологии, компьютерные сети, мобильные платформы",
+
+"Soft skill": "all"
+}
+Ctrl+X -> Y -> Enter
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+git add .
+git commit -am "add files: preference.json, skills.json" & git push
+ 16. На веб интерфейсе создать файл bug_report.json.
+Add file -> Create new file -> name "bug_report.json" -> commit "add file bug_report.json" 
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе. Commit new file
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+Open file bug_report.json -> "Edit this file" ->
+{
+  "ID": "1-SU",
+  "Summary": "Страница регистрации, ввод невалидного номера",
+  "Priority": "Medium",
+  "Severity": "Minor",
+  "STR": "Перейти по ссылке: https://id2.action-media.ru/Account/Registration?appid=10475&callbackurl=https%3A%2F%2Fenter.business.ru&rand=948b2e092da36905f8fbe6aaa5d4965b&sig=f5c3ef30b6c0fd6b2879bf46ae330823& ; Ввести невалидный номер",
+  "Expected Result": "При вводе номера включается ограничение на кол-во символов для мобильных номеров указывается корректная вторая цифра (9) для номеров РФ",
+  "Actual Result": "Можно ввести любые символы, не выходит ошибки о некорректном номере телефона",
+  "Environment": "Windows 10. Google Chrome v. 95.0.4638.69",
+  "Link": "https://inrared.nimbusweb.me/s/share/6272281/d0cqphnu2uuok81g5ob8"
+}
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе. 
+	Commit changes "Update bug_report.json"
+ 20. Синхронизировать внешний и локальный репозиторий JSON: 
+	git pull
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML. 
+	https://github.com/AlexShams102/XML.git
+ 22. Клонировать репозиторий XML на локальный компьютер. 
+	git clone https://github.com/AlexShams102/XML.git
+ 23. Внутри локального XML создать файл “new.xml”. 
+	touch new.xml
+ 24. Добавить файл под гит. 
+	git add new.xml
+ 25. Закоммитить файл. 
+	git commit -m "add new.xml"
+ 26. Отправить файл на внешний GitHub репозиторий. 
+	git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML. 
+nano new.xml
+<name>Шамсутдинов Алексей Раисович</name>
+<age>30</age>
+<pets>2</pets>
+<salary>500%</salary>
+Ctrl+X -> Y -> Enter
+ 28. Отправить изменения на внешний репозиторий. 
+git add new.xml
+git commit -m "update new.xml"
+git push
+ 29. Создать файл preferences.xml 
+	touch preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+nano preferences.xml
+<film>Interstate 60</film>
+<TV series>Scrubs</TV series>
+<food>Dumplings</food>
+<season>Summer</season>
+<country>Norway</country>
+Ctrl+X -> Y -> Enter
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML 
+nano skills.xml
+<hard skill_1>Понимание процессов тестирования и разработки ПО</hard skill_1>
+<hard skill_2>Понимание основ тестирования</hard skill_2>
+<hard skill_3>Работа с тестовой документацией</hard skill_3>
+<hard skill_4>Умение оформлять отчёты о дефектах</hard skill_4>
+<hard skill_5>Знание методологий тестирования</hard skill_5>
+<hard skill_6>Базы данных, веб-технологии, компьютерные сети, мобильные платформы</hard skill_6>
+<Soft skill>all</Soft skill>
+Ctrl+X -> Y -> Enter
+ 32. Сделать коммит в одну строку. 
+	git add . & git commit -m "add file" & git push
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+	git push 
+ 34. На веб интерфейсе создать файл bug_report.xml. 
+Add file -> Create new file -> name "bug_report.xml" -> commit "add file bug_report.xml"
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе. 
+	Commit new file
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+Open file bug_report.xml -> "Edit this file" ->
+  <ID>1-SU</ID>
+  <Summary>Страница регистрации, ввод невалидного номера</Summary>
+  <Priority>Medium</Priority>
+  <Severity>Minor</Severity>
+  <STR>Перейти по ссылке: https://id2.action-media.ru/Account/Registration?appid=10475&callbackurl=https%3A%2F%2Fenter.business.ru&rand=948b2e092da36905f8fbe6aaa5d4965b&sig=f5c3ef30b6c0fd6b2879bf46ae330823& ; Ввести невалидный номер </STR>
+  <Expected Result> При вводе номера включается ограничение на кол-во символов для мобильных номеров указывается корректная вторая цифра (9) для номеров РФ </Expected Result>
+  <Actual Result> Можно ввести любые символы, не выходит ошибки о некорректном номере телефона </Actual Result>
+  <Environment> Windows 10. Google Chrome v. 95.0.4638.69 </Environment>
+  <Link> https://inrared.nimbusweb.me/s/share/6272281/d0cqphnu2uuok81g5ob8 </Link>
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе. 
+	Update bug_report.xml
+ 38. Синхронизировать внешний и локальный репозиторий XML: 
+	git pull
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT. 
+	https://github.com/AlexShams102/TXT.git
+ 2. Клонировать репозиторий TXT на локальный компьютер. 
+	git clone https://github.com/AlexShams102/TXT.git
+ 3. Внутри локального TXT создать файл “new.txt”. 
+	touch new.txt
+ 4. Добавить файл под гит. 
+	git add new.txt
+ 5. Закоммитить файл. 
+	git commit -am "add new.txt"
+ 6. Отправить файл на внешний GitHub репозиторий. 
+	git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+nano new.txt
+"ФИО": "Шамсутдинов Алексей Раисович",
+"Возраст": 30,
+"Колличество домашних животных": 2,
+"Будущая желаемая зарплата": "500$ на стажировке"
+Ctrl+X -> Y -> Enter
+ 8. Отправить изменения на внешний репозиторий. 
+	git add . & git commit -m "add file" & git push
+ 9. Создать файл preferences.txt: 
+	touch preferenses.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+nano preferenses.txt
+"Люимый фильм":"Трасса 60",
+"Любимый сериал":"Клиника/Scrubs",
+"Любимая еда":"Пельмени"
+"Любимое время года":"Лето"
+"Страна которую хотели посетить":"Норвегия"
+Ctrl+X -> Y -> Enter
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT:
+nano skills.txt
+"Hard skill 1": "Понимание процессов тестирования и разработки ПО",
+"Hard skill 2": "Понимание основ тестирования",
+"Hard skill 3": "Работа с тестовой документацией",
+"Hard skill 4": "Умение оформлять отчёты о дефектах",
+"Hard skill 5": "Знание методологий тестирования",
+"Hard skill 6": "Базы данных, веб-технологии, компьютерные сети, мобильные платформы",
+
+"Soft skill": "all"
+Ctrl+X -> Y -> Enter
+ 12. Сделать коммит в одну строку. 
+	git commit -am "add file" 
+ 13. Отправить сразу 2 файла на внешний репозиторий. 
+	git add . & git commit -m "add file" & git push
+ 14. На веб интерфейсе создать файл bug_report.txt.
+Add file -> Create new file -> name "bug_report.txt" -> commit "add file bug_report.txt"
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе. 
+	Commit new file
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+"ID": "1-SU",
+  "Summary": "Страница регистрации, ввод невалидного номера",
+  "Priority": "Medium",
+  "Severity": "Minor",
+  "STR": "Перейти по ссылке: https://id2.action-media.ru/Account/Registration?appid=10475&callbackurl=https%3A%2F%2Fenter.business.ru&rand=948b2e092da36905f8fbe6aaa5d4965b&sig=f5c3ef30b6c0fd6b2879bf46ae330823& ; Ввести невалидный номер",
+  "Expected Result": "При вводе номера включается ограничение на кол-во символов для мобильных номеров указывается корректная вторая цифра (9) для номеров РФ",
+  "Actual Result": "Можно ввести любые символы, не выходит ошибки о некорректном номере телефона",
+  "Environment": "Windows 10. Google Chrome v. 95.0.4638.69",
+  "Link": "https://inrared.nimbusweb.me/s/share/6272281/d0cqphnu2uuok81g5ob8"
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе. 
+	Commit new file "Update bug_report.txt"
+ 18. Синхронизировать внешний и локальный репозиторий TXT 
+	git pull
